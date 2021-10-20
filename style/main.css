@@ -1,0 +1,110 @@
+:root{
+    --vermelho: #e50914;
+    --preta: #141414;
+    --cinza: #aaa;
+    --branca: #fff;
+    font-size: 62.5%; /*10px*/
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: var(--preta);
+    font-family: 'Arial', Times, serif;
+    color: var(--branca);
+}
+
+/* header */
+
+header .container{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo{
+    color: var(--vermelho);
+    font-family: 'Arial Black', Times;
+    font-size: clamp(2.4rem, 4.8rem, 5vw);
+}
+
+header nav a{
+    text-decoration: none;
+    color: var(--cinza);
+    margin-right: 10px;
+    font-size: 1.6rem;
+}
+
+header nav a:hover{
+    color: var(--branca);
+}
+
+/* Coisa relacionadas ao item principal */
+
+.item-principal{
+    font-size: 1.6rem;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url("../img/capa.jpg");
+    height: 41rem;
+    background-size: cover;
+    background-position: left;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.item-principal .descricao{
+    margin-bottom: 8.0rem;
+    margin-top: .2rem;
+    font-size: 1.8rem;
+    text-align: justify;
+    /* max-width: 50%; */
+}
+
+.item-principal .titulo{
+    margin-top: 15%;
+    font-size: 4.0rem;
+    font-family: 'Trebuchet MS', Arial, sans-serif ;
+}
+
+.btn{
+   background-color: rgba(0,0,0,.50); 
+   border: none;
+   color: var(--branca);
+
+   padding: 1.5rem;
+   margin-right: 1.5rem;
+   font-size: 1.2rem;
+
+   cursor: pointer;
+   transition: .3s ease all;
+}
+
+.btn:hover{
+    background-color: var(--branca);
+    color: var(--preta);
+}
+
+.btn i{
+    margin-right: .8rem;
+}
+
+.container{
+    margin-left: 2rem;
+}
+
+.item-principal .container{
+    width: 80%;
+}
+
+.box-item{
+   height: 100%;
+   width: 100%; 
+   display: block;
+}
+
